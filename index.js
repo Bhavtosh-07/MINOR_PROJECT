@@ -29,7 +29,8 @@ const fetchAndShowResults = async (URL) => {
 }
 const getSpecificPage = (page) => {
     const URL = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=${apiKey}&page=${page}`
-    fetchAndShowResults(URL)
+    fetchAndShowResults(URL);
+    console.log("lets see changes")
 }
 const movieCard = (movie) =>
     `<div class="col">
