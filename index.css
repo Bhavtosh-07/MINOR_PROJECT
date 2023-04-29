@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Lobster&family=Poppins:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,300,700');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  color: white;
+  font-family: "microsoft yahei", arial, -apple-system, BlinkMacSystemFont,
+    "segoe ui", roboto, oxygen, cantarell, "helvetica neue", ubuntu, sans-serif;
+  background-image: url("https://mcdn.wallpapersafari.com/medium/4/12/bvQJC7.jpg");
+
+}
+#logo-img
+{
+  height: 100px;
+  width: 250px;
+  border-radius: 40px;
+  box-shadow: 8px 10px 47px 2px rgb(255, 252, 255);
+  opacity: 0.81;
+}
+#logo-img:hover
+{
+  transform: scale(1.1,1.1);
+  opacity: 1;
+  border:4px solid #000000;
+}
+.btn {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 6px 8px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: inherit;
+}
+
+.btn:hover {
+  background: #06c3dd;
+  border-color: #06c3dd;
+}
+
+.row {
+  display: flex;
+  max-width: 1200px;
+  gap: 15px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#title-heading {
+  font-family: 'Clicker Script', cursive;
+  font-size: 60px;
+  color: rgb(249, 209, 156);
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  padding: 15px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper .card {
+  position: relative;
+  font-size: 14px;
+  line-height: 21px;
+  width: 285px;
+  height: 360px;
+  overflow: hidden;
+  transition: 0.5s ease all;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.wrapper .card .card-content {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 50px 10px 7px;
+  background-image: linear-gradient(180deg,
+      rgba(51, 55, 69, 0),
+      rgba(16, 21, 40, 0.95));
+  transition: inherit;
+}
+
+.wrapper .card .card-content .card-cont-header {
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper .card .card-content .describe {
+  max-height: 0;
+  opacity: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  transition: inherit;
+}
+
+.wrapper .card:hover {
+  cursor: pointer;
+}
+
+.wrapper .card:hover .card-content {
+  background-image: linear-gradient(180deg, rgba(51, 55, 69, 0) 0, #101528 48%);
+}
+
+.wrapper .card:hover .btn {
+  background: #06c3dd;
+  border-color: #06c3dd;
+}
+
+.wrapper .card:hover .describe {
+  max-height: 200px;
+  padding: 8px 0;
+  opacity: 1;
+}
+
+.search-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  align-items: center;
+  margin-bottom: 15px;
+  margin: 15px 0 30px 0;
+}
+
+.search-block #search-form {
+  display: flex;
+  max-width: 400px;
+}
+
+#query::placeholder {
+  color: white;
+}
+
+.search-block input {
+  width: 100%;
+  max-width: 400px;
+  padding: 15px;
+  border-radius: 20px;
+  border: 3px solid white;
+  /* color:whitesmoke */
+  color: wheat;
+  margin-right: 14px;
+  /* background: linear-gradient(to left, #302f18,#919388); */
+  background-color: transparent;
+}
+
+.search-block .btn {
+  width: 164px;
+  align-items: center;
+  background-color: #0A66C2;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.search-block .btn:hover,
+.search-block .btn:focus {
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+.search-block .btn:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.search-block .btn:disabled {
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+.btn-load {
+  background-color: skyblue;
+  padding: 10px 25px;
+  border: none;
+  margin-top: 15px;
+}
+
+.image-change {
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#rating {
+  font-weight: bolder;
+  font-size: 20px;
+  /* color: rgba(245, 222, 179, 0.871); */
+  color: red;
+}
+
+#release-date {
+  font-size: 15px;
+  font-weight: 900;
+  color: rgba(245, 222, 179, 0.871);
+
+}
+
+/* FOR THE FOOTER DESIGN */
+.footer-distributed {
+  margin-top: 20px;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-sizing: border-box;
+  width: 100%;
+  font: bold 16px sans-serif;
+  text-align: left;
+  padding: 50px 60px 10px;
+  overflow: hidden;
+}
+section {
+  width: 100%;
+  display: inline-block;
+  background: wheat;
+  height: 60vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  float: left;
+}
+
+/* The company logo */
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px 'Roboto', cursive;
+  margin: 0 0 10px;
+}
+
+.footer-distributed h3 span {
+  color: #5383d3;
+}
+
+/* Footer links */
+.footer-distributed .footer-links {
+  font-size: 20px;
+  color: white;
+  color: black;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: 0.2s all ease-in;
+}
+.footer-distributed .footer-links a:hover {
+ 
+  color:white;
+  color:wheat;
+  font-size: 40px;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons {
+  margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 10px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+.footer-distributed .footer-icons a i
+{
+  transition: 0.2s all ease-in;
+}
+.footer-distributed .footer-icons a i:hover
+{
+  font-size: 30px;
+}
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  float: right;
+}
+
+.footer-distributed .footer-right p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px 42px 0 0;
+  color: #ffffff;
+}
+
+/* The contact form */
+
+.footer-distributed form {
+  display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea {
+  display: block;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: #1f2022;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border: none;
+  resize: none;
+
+  font: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  color: #d1d2d2;
+
+  width: 400px;
+  padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+  color: #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+  color: #5c666b;
+  opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder {
+  color: #5c666b;
+}
+
+
+.footer-distributed form input {
+  height: 55px;
+  margin-bottom: 15px;
+}
+
+.footer-distributed form textarea {
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.footer-distributed form button {
+  border-radius: 3px;
+  background-color: #33383b;
+  color: #ffffff;
+  border: 0;
+  padding: 15px 50px;
+  font-weight: bold;
+  float: right;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-company-name {
+    font-size: 12px;
+  }
+
+  .footer-distributed form input,
+  .footer-distributed form textarea {
+    width: 250px;
+  }
+
+  .footer-distributed form button {
+    padding: 10px 35px;
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  .footer-distributed {
+    padding: 30px;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right {
+    float: none;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .footer-distributed .footer-left {
+    margin-bottom: 40px;
+  }
+
+  .footer-distributed form {
+    margin-top: 30px;
+  }
+
+  .footer-distributed form {
+    display: block;
+  }
+
+  .footer-distributed form button {
+    float: none;
+  }
+}
+
+#send-btn {
+  cursor: pointer;
+  border-radius: 20px;
+  transition: 0.2 all ease-in;
+}
+
+#send-btn:hover {
+  background-color: #0A66C2;
+  color: white;
+}
