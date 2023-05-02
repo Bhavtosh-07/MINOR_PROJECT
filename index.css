@@ -21,6 +21,8 @@ body {
   border-radius: 40px;
   box-shadow: 8px 10px 47px 2px rgb(255, 252, 255);
   opacity: 0.81;
+  position: relative;
+  left: 0;
 }
 #logo-img:hover
 {
@@ -140,6 +142,9 @@ body {
 .search-block #search-form {
   display: flex;
   max-width: 400px;
+  position: relative;
+  left: 0%;
+  margin-top: 15px;
 }
 
 #query::placeholder {
